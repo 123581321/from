@@ -15,6 +15,13 @@ namespace git使って何かする
         public Form1()
         {
             InitializeComponent();
+
+            TestButton testbutton = new TestButton();
+
+            Controls.Add(testbutton);
+
         }
+
+       
     }
 }
