@@ -16,12 +16,17 @@ namespace git使って何かする
         {
             InitializeComponent();
 
-            TestButton testbutton = new TestButton();
+            for (int i = 0; i < 10; i++)
+            {
 
-            Controls.Add(testbutton);
+                TestButton testbutton = new TestButton(i,(i % 3)* 100, (i / 3)* 100, 100, 100);
+                Controls.Add(testbutton);
 
-        }
-
+            }
        
-    }
+
+            }
+
+
+}
 }
