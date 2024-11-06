@@ -20,6 +20,11 @@ namespace git使って何かする
             Size = new System.Drawing.Size(wide, high);
         }
 
+        public void TextUpdate(string str)
+        {
+            Text = str;
+        }
+
  
         }
     }
