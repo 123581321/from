@@ -5,6 +5,11 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "git使って何かする", "git使って何かする\git使って何かする.csproj", "{E0297E0A-FD9A-41BF-B8DD-57C90AD1168B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ソリューション項目", "ソリューション項目", "{399269BD-E026-452F-B7D1-8955882E5B43}"
+	ProjectSection(SolutionItems) = preProject
+		TestLabel = TestLabel
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

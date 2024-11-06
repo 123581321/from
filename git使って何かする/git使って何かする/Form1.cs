@@ -15,19 +15,28 @@ namespace git使って何かする
         public Form1()
         {
             InitializeComponent();
-            int a;
+          
             for (int i = 0; i < 10; i++)
             {
 
-                TestButton testbutton = new TestButton(a,(i % 3)* 100, (i / 3)* 100, 100, 100);
+                TestButton testbutton = new TestButton (i,(i % 3) * 100, (i / 3) * 100, 100, 100) ;
                 Controls.Add(testbutton);
-
-                a += 1;
             }
-       
+            
+            TestLabel testlabel =
+                new TestLabel("ラベルです。", 400, 300, 100, 500);
+            Controls.Add(testlabel);
+
+            /*Label label = new Label();
+            label. Location = new Point(400,400);
+            label. Text = "ラベルです";
+            Controls.Add(label);*/
 
             }
+        private void button1_Click(object sender,EventArgs e)
+        {
 
+        }
 
 }
 }
