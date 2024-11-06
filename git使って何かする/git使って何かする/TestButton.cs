@@ -9,14 +9,14 @@ namespace git使って何かする
 {
     internal class TestButton : Button 
     {
-        public TestButton( int id,int x, int y,int wide, int high)
+        public TestButton( int a, int x, int y,int wide, int high)
         {
             //ClickイベントにOnClick関数を登録
             //ボタンをクリックした時に登録した関数を実行します。
             Click += OnClick;
 
             //ボタンに無い文字を表示させる
-            Text = id.ToString();
+            Text = a.ToString();
 
             Location = new System.Drawing.Point(x,y);
 

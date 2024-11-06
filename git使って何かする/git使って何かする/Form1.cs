@@ -15,13 +15,14 @@ namespace git使って何かする
         public Form1()
         {
             InitializeComponent();
-
+            int a;
             for (int i = 0; i < 10; i++)
             {
 
-                TestButton testbutton = new TestButton(i,(i % 3)* 100, (i / 3)* 100, 100, 100);
+                TestButton testbutton = new TestButton(a,(i % 3)* 100, (i / 3)* 100, 100, 100);
                 Controls.Add(testbutton);
 
+                a += 1;
             }
        
 
