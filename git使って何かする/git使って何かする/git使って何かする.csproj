@@ -57,7 +57,11 @@
     <Compile Include="TestButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="TestButton2.cs" />
     <Compile Include="TestLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TestTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
@@ -81,6 +85,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TestTextBox" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

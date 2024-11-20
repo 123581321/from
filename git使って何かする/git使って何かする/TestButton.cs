@@ -10,6 +10,7 @@ namespace git使って何かする
     internal class TestButton : Button 
     {
         Form1 _form1;
+        
 
         /// <summary>
         /// 
@@ -23,10 +24,12 @@ namespace git使って何かする
         {
 
             _form1 = form1;
+            
 
-            //ClickイベントにOnClick関数を登録
-            //ボタンをクリックした時に登録した関数を実行します。
-            Click += OnClick;
+
+           //ClickイベントにOnClick関数を登録
+           //ボタンをクリックした時に登録した関数を実行します。
+           Click += OnClick;
 
             //ボタンに無い文字を表示させる
             if (a == 0)
@@ -69,7 +72,8 @@ namespace git使って何かする
             {
                 Text = "す";
             }
-         
+
+           
 
             Location = new System.Drawing.Point(x,y);
 
@@ -78,7 +82,14 @@ namespace git使って何かする
 
         public void OnClick(object sender, EventArgs s)
         {
+            string t = _form1.UpdateTextBox(Text);
+
+            Text = t;
+
             _form1.LabelTextUpdate(Text);
+            
+          
+         
         }
     }
 }

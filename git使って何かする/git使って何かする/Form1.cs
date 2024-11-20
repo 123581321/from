@@ -13,7 +13,7 @@ namespace git使って何かする
     public partial class Form1 : Form
     {　//ローカル変数、メンバ変数を保存
         TestLabel _testLabel;
-
+        TestTextBox _textBox;
         public Form1()
         {
             InitializeComponent();
@@ -27,6 +27,9 @@ namespace git使って何かする
             
                _testLabel =  new TestLabel("ラベルです。", 400, 300, 100, 500);
             Controls.Add(_testLabel);
+
+            _textBox = new TestTextBox("", 10, 400, 500, 100);
+            Controls.Add(_textBox);
 
             /*Label label = new Label();
             label. Location = new Point(400,400);
@@ -42,6 +45,18 @@ namespace git使って何かする
         {
             _testLabel.TextUpdate(str);
         }
+        /// <summary>  
+        /// テキストボックスのテキストを更新する
+        /// </summary>
+        /// <param name="str"></param>
+        public string UpdateTextBox(string str)
+        {
+            string s = _textBox.TextUpdate(str);
 
-}
+            return s;
+            
+        }
+
+
+    }
 }
